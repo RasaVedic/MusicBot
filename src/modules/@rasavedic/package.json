@@ -1,0 +1,15 @@
+{
+  "name": "@rasavedic",
+  "version": "1.0.0",
+  "description": "Advanced debugging and error handling module for Discord bots",
+  "main": "index.js",
+  "author": "Rasavedic Team",
+  "license": "MIT",
+  "keywords": [
+    "debug",
+    "logger",
+    "error-handler",
+    "performance",
+    "discord-bot"
+  ]
+}

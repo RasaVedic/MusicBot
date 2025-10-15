@@ -1,0 +1,29 @@
+{
+  "defaultPrefix": "+",
+  "embedColor": "#FF4B32",
+  "autoDeleteTime": 30000,
+  "music": {
+    "maxQueueSize": 100,
+    "defaultVolume": 80,
+    "leaveOnEmpty": true,
+    "leaveOnEmptyDelay": 60000,
+    "leaveOnEnd": true,
+    "leaveOnEndDelay": 60000
+  },
+  "lavalink": {
+    "nodes": [
+      {
+        "name": "Node 1",
+        "url": "your-lavalink-server.com:443",
+        "auth": "your-lavalink-password",
+        "secure": true
+      },
+      {
+        "name": "Node 2",
+        "url": "another-lavalink.com:2333",
+        "auth": "your-password",
+        "secure": false
+      }
+    ]
+  }
+}

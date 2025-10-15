@@ -1,0 +1,75 @@
+{
+  "defaultPrefix": "!",
+  "embedColor": "#FF4B32",
+  "lyricsEmbedColor": "#00FF00",
+  "autoDeleteTime": 10000,
+  "commandCooldown": {
+    "enabled": true,
+    "defaultCooldown": 3000,
+    "musicCommandCooldown": 2000,
+    "adminCommandCooldown": 5000
+  },
+  "validation": {
+    "maxMuteMinutes": 40320,
+    "maxMuteHours": 672,
+    "maxMuteDays": 28,
+    "minMuteMinutes": 1,
+    "purgeMinAmount": 1,
+    "purgeMaxAmount": 100,
+    "messageMaxAge": 1209600000
+  },
+  "music": {
+    "maxQueueSize": 200,
+    "defaultVolume": 70,
+    "leaveOnEmpty": true,
+    "leaveOnEmptyDelay": 60000,
+    "leaveOnEnd": false,
+    "leaveOnEndDelay": 60000,
+    "audioQuality": {
+      "bitrate": 96000,
+      "smoothing": true,
+      "bufferDuration": 400
+    }
+  },
+  "buttonSpam": {
+    "enabled": true,
+    "maxClicks": 5,
+    "timeWindow": 10000,
+    "muteDuration": 300000,
+    "autoDeleteOldMessages": true
+  },
+  "lavalink": {
+    "nodes": [
+      {
+        "name": "Senirita",
+        "url": "lavalink.jirayu.net:443",
+        "auth": "youshallnotpass",
+        "secure": true
+      },
+      {
+        "name": "AjieDev v4 SSL",
+        "url": "lava-v4.ajieblogs.eu.org:443",
+        "auth": "https://dsc.gg/ajidevserver",
+        "secure": true
+      },
+      {
+        "name": "AjieDev v4 Non-SSL",
+        "url": "lava-v4.ajieblogs.eu.org:80",
+        "auth": "https://dsc.gg/ajidevserver",
+        "secure": false
+      },
+      {
+        "name": "Combined v3 SSL",
+        "url": "lava-all.ajieblogs.eu.org:443",
+        "auth": "https://dsc.gg/ajidevserver",
+        "secure": true
+      },
+      {
+        "name": "Combined v3 Non-SSL",
+        "url": "lava-all.ajieblogs.eu.org:80",
+        "auth": "https://dsc.gg/ajidevserver",
+        "secure": false
+      }
+    ]
+  }
+}

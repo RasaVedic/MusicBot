@@ -1,0 +1,73 @@
+{
+  "name": "@rasavedic/discord-music-bot",
+  "version": "2.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "DEBUG_LEVEL=DEBUG DEBUG_MODULES=* node index.js",
+    "prod": "NODE_ENV=production DEBUG_LEVEL=WARN node index.js",
+    "debug": "DEBUG_LEVEL=TRACE DEBUG_MODULES=* DEBUG_ERROR_STACK=true node index.js",
+    "watch": "nodemon --watch src --exec 'DEBUG_LEVEL=DEBUG node index.js'",
+    "docker:build": "docker build -t discord-music-bot .",
+    "docker:run": "docker run -d --env-file .env --name discord-bot --restart unless-stopped discord-music-bot",
+    "docker:stop": "docker stop discord-bot && docker rm discord-bot",
+    "docker:logs": "docker logs -f discord-bot",
+    "docker:restart": "docker restart discord-bot",
+    "docker:shell": "docker exec -it discord-bot sh",
+    "pm2:start": "pm2 start index.js --name discord-bot --time --log-date-format 'DD/MM HH:mm:ss'",
+    "pm2:stop": "pm2 stop discord-bot",
+    "pm2:restart": "pm2 restart discord-bot",
+    "pm2:logs": "pm2 logs discord-bot",
+    "pm2:monit": "pm2 monit discord-bot",
+    "health": "node -e \"console.log('Bot health check:', process.uptime() > 0 ? 'OK' : 'FAIL')\"",
+    "test": "echo \"No tests configured\" && exit 0"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "music",
+    "lavalink",
+    "discord.js",
+    "kazagumo",
+    "shoukaku",
+    "spotify",
+    "crash-recovery",
+    "firebase",
+    "voice-bot",
+    "music-streaming"
+  ],
+  "author": "Rasavedic Team",
+  "license": "MIT",
+  "description": "Production-ready Discord music bot with Lavalink streaming, automatic crash recovery, and advanced error handling with IST logging",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rasavedic/discord-music-bot"
+  },
+  "bugs": {
+    "url": "https://github.com/rasavedic/discord-music-bot/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "dependencies": {
+    "@discordjs/voice": "^0.18.0",
+    "@vitalets/google-translate-api": "^9.2.1",
+    "canvas": "^3.2.0",
+    "chalk": "^4.1.2",
+    "discord.js": "^14.23.2",
+    "dotenv": "^17.2.3",
+    "ffmpeg-static": "^5.2.0",
+    "firebase-admin": "^13.5.0",
+    "genius-lyrics-api": "^3.2.1",
+    "kazagumo": "^3.3.0",
+    "kazagumo-spotify": "^2.1.1",
+    "libsodium-wrappers": "^0.7.15",
+    "lyrics-finder": "^21.7.0",
+    "node-fetch": "^3.3.2",
+    "play-dl": "^1.9.7",
+    "shoukaku": "^4.1.1",
+    "ws": "^8.18.3",
+    "youtubei.js": "^15.1.1"
+  }
+}

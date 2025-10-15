@@ -1,0 +1,84 @@
+{
+  "debugMode": {
+    "enabled": true,
+    "logToFile": false,
+    "logFilePath": "./logs/debug.log"
+  },
+  "commands": {
+    "enabled": true,
+    "logInput": true,
+    "logOutput": true,
+    "logExecutionTime": true,
+    "logErrors": true,
+    "includeMessageId": true,
+    "includeUserId": true,
+    "includeGuildId": true
+  },
+  "buttons": {
+    "enabled": true,
+    "logInteraction": true,
+    "logButtonId": true,
+    "logUserAction": true,
+    "logPlayerState": true,
+    "includeMessageId": true,
+    "includeUserId": true
+  },
+  "botReplies": {
+    "enabled": true,
+    "logEmbed": true,
+    "logContent": true,
+    "logReason": true,
+    "includeMessageId": true,
+    "includeChannelId": true
+  },
+  "musicEvents": {
+    "enabled": true,
+    "logTrackStart": true,
+    "logTrackEnd": true,
+    "logQueueChanges": true,
+    "logAutoplay": true,
+    "logPlayerState": true,
+    "includeTrackDetails": true
+  },
+  "messageEvents": {
+    "enabled": true,
+    "logMessageCreate": true,
+    "logMessageDelete": true,
+    "logMessageEdit": false,
+    "includeMessageContent": true,
+    "includeMessageId": true
+  },
+  "voiceEvents": {
+    "enabled": true,
+    "logVoiceStateUpdate": true,
+    "logVoiceConnect": true,
+    "logVoiceDisconnect": true,
+    "includeChannelInfo": true
+  },
+  "errors": {
+    "enabled": true,
+    "logStackTrace": true,
+    "logErrorContext": true,
+    "includeUserInfo": true,
+    "includeCommandInfo": true
+  },
+  "performance": {
+    "enabled": true,
+    "logSlowCommands": true,
+    "slowCommandThreshold": 1000,
+    "logMemoryUsage": false,
+    "logApiLatency": true
+  },
+  "firebase": {
+    "enabled": true,
+    "logSaveOperations": true,
+    "logLoadOperations": true,
+    "logErrors": true
+  },
+  "spam": {
+    "enabled": true,
+    "logSpamDetection": true,
+    "logMuteActions": true,
+    "includeUserInfo": true
+  }
+}
